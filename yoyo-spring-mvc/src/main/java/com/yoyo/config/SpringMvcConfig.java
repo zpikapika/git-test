@@ -31,7 +31,6 @@ public class SpringMvcConfig extends WebMvcConfigurerAdapter {
         return viewResolver;
     }
 
-    @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
         // addResourceHandler 是对外暴露的访问地址; addResourceLocations 是静态资源文件的目录;
         registry.addResourceHandler("/static/**").addResourceLocations("classpath:/static/");
