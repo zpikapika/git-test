@@ -46,7 +46,7 @@ public class SpringMvcConfig extends WebMvcConfigurerAdapter {
         registry.addInterceptor(myInterceptor());
     }
 
-    @Override
+    
     public void addViewControllers(ViewControllerRegistry registry) {
         registry.addViewController("/index").setViewName("index");
         registry.addViewController("/toUpload").setViewName("upload");
